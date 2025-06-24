@@ -12,15 +12,6 @@ num_projects = st.number_input("项目数量", min_value=0, max_value=10, value=
 results = []
 
 for i in range(int(num_projects)):
-    # with st.expander(f"📁 项目 {i+1} 配置", expanded=True):
-    #     project_name = st.text_input("项目名称", value=f"项目{i+1}", key=f"pname_{i}")
-    #     scenario_name = st.text_input("场景名称", value="基础场景", key=f"scname_{i}")
-
-    #     invest = st.number_input("初始投入（负数）", value=-1000.0, key=f"inv_{i}")
-    #     cf = st.number_input("每期现金流", value=100.0, key=f"cf_{i}")
-    #     n = st.number_input("期数（0 表示永续）", min_value=0, step=1, value=5, key=f"n_{i}")
-    #     g = st.number_input("现金流增长率（如 5% 填 0.05）", value=0.0, key=f"g_{i}")
-    #     rv = st.number_input("残值（仅限有限期）", value=0.0, key=f"rv_{i}")
     with st.expander(f"📁 项目 {i+1} 配置", expanded=True):
         cola, colb = st.columns(2)
         with cola:
